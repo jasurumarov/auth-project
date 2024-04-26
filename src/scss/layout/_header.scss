@@ -1,0 +1,223 @@
+@use '../abstracts' as *;
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0px 0px 8px 0px #33333333;
+    .header-container {
+        max-width: 1328px;
+        padding: 0 16px;
+        margin: 0 auto;
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button {
+                cursor: pointer;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                a, select {
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.47999998927116394px;
+                }
+                select {
+                    outline: none;
+                    border: none;
+                    background: none;
+                }
+
+            }
+            p {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-weight: 500;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 22.5px;
+                letter-spacing: 0.47999998927116394px;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    margin-top: 58.5px;
+    background: white;
+    border-bottom: 1px solid #E9E9E9;
+    .header-container {
+        max-width: 1328px;
+        padding: 0 16px;
+        margin: 0 auto;
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            .navbar__logo {
+                margin-left: -24px;
+            }
+            form {
+                display: flex;
+                .form {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #64B496;
+                    border-right: none;
+                    border-radius: 5px 0 0 5px;
+                    overflow: hidden;
+                    input {
+                        width: 400px;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        padding: 14.5px 16px;
+                        border-radius: 5px 0 0 5px;
+                        border: none;
+                        border-right: 1px solid #64B496;
+                    }
+                    div {
+                        padding: 0 10px;
+                        cursor: pointer;
+                        select {
+                            outline: none;
+                            cursor: pointer;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 19.5px;
+                            font-size: 13px;
+                            background: none;
+                            border: none;
+                            padding: 13.5px 4px;
+                        }
+                    }
+                }
+                label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #F53E32;
+                    padding: 15.9px 18px;
+                    border-radius: 0 5px 5px 0;
+                    cursor: pointer;
+                    user-select: none;
+                    img {
+                        width: 18.48px;
+                    }
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 12.5px;
+                        font-family: Poppins;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 15px;
+                        letter-spacing: 0.47999998927116394px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1108px) {
+    .header-bottom {
+        form {
+            input {
+                width: 100% !important;
+            }
+        }
+    } 
+}
+
+@media (max-width: 964px) {
+    .header-top {
+        .menu-btn {
+            order: 3;
+        }
+        .navbar__list {
+            z-index: 10;
+            position: absolute;
+            top: 60px;
+            left: 0;    
+            width: 100%;
+            padding: 24px 0;
+            background: white;
+            box-shadow: 0 3px 5px #0002;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease;
+            transform-origin: top;
+            transform: scaleY(0);
+        }
+        .navbar__list.show {
+            transform: scaleY(1);
+        }
+    } 
+    .header-bottom {
+        padding: 20px 0;
+        .navbar__logo {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .header-bottom {
+        .navbar {
+            flex-wrap: wrap;
+            justify-content: center !important;
+            form {
+                order: 2;
+            }
+        }
+    }
+}
+
+@media (max-width: 458px) {
+    .header-bottom {
+        .navbar {
+            form {
+                position: relative;
+                .form {
+                    border-radius: 5px !important;
+                    border-right: 1px solid #64B496 !important;
+                }
+                select {
+                    padding: 0px !important;
+                }
+                label {
+                    padding-right: 4px !important;
+                    padding-left: 6px !important;
+                    padding-bottom: 19px !important;
+                    border-radius: 0 !important;
+                    position: absolute;
+                    top: 0;
+                    right: 128px;
+                }
+            }
+        }
+    }
+}

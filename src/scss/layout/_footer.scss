@@ -1,0 +1,150 @@
+@use '../abstracts' as *;
+
+footer {
+    padding: 101px 0 0 0;
+    border-top: 1px solid #E9E9E9;
+    background: #F7F7F8;
+    .footer-container {
+        max-width: 1352px;
+        padding: 0 16px;
+        margin: 0 auto;
+        .footer-navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 75px;
+            .footer-navbar__title {
+                max-width: 394px;
+                .footer-navbar__title--img {
+                    margin-left: -21px;
+                }
+                p {
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24.5px;
+                    letter-spacing: 0.47999998927116394px;
+                    color: #7A7A7A;
+                    margin-bottom: 28.5px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    li {
+                        display: flex;
+                        align-items: start;
+                        gap: 9px;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0.47999998927116394px;
+                        color: #777777;
+                    }
+                }
+            }
+            .footer-navbar__listGroup {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 70px;
+                .footer-navbar__list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    h3 {
+                        font-family: Poppins;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 23.4px;
+                        letter-spacing: 0.47999998927116394px;
+                        margin-bottom: 2px;
+                    }
+                    a {
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0.47999998927116394px;
+                        color: #777777;
+                    }
+                }
+            }
+            .footer-navbar__form {
+                h3 {
+                    font-family: Poppins;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23.4px;
+                    letter-spacing: 0.47999998927116394px;
+                    margin-bottom: 17px;
+                }
+                label {
+                    position: relative;
+                    input {
+                        width: 416px;
+                        padding: 13px 32px 10px 16px;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        border-radius: 5px;
+                        border: 1px solid #E9E9E9;
+                    }
+                    img {
+                        position: absolute;
+                        right: 12px;
+                        top: 1px;
+                    }
+                }
+                .footer-navbar__form--social {
+                    margin: 24px 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                }
+                .footer-navbar__form--imgs {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    img {
+                        width: 74px;
+                        height: 74px;
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            margin-top: 100px;
+            padding: 19px 0;
+            border-top: 1px solid #E9E9E9;
+            display: flex;
+            justify-content: center;
+            p {
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                letter-spacing: 0.47999998927116394px;
+                span {
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.8px;
+                    letter-spacing: 0.47999998927116394px;
+                    color: #F53E32;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 464px) {
+    .footer-navbar__form {
+        label {
+            input {
+                width: 100% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.InHeader-section {
+    background: #F53E32;
+    padding: 25px 0;
+    .header-container {
+        max-width: 1328px;
+        padding: 0 16px;
+        margin: 0 auto;
+        .InHeader__nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            h4 {
+                font-family: Poppins;
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0.47999998927116394px;
+                color: white;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                a, p {
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18.2px;
+                    letter-spacing: 0.47999998927116394px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

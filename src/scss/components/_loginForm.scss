@@ -1,0 +1,116 @@
+.loginForm-section {
+    margin: 100px 0;
+    .loginForm-section__content {
+        display: flex;
+        justify-content: center;
+        form {
+            width: 400px;
+            padding: 0 31px 31px 31px;
+            border: 1px solid #E9E9E9;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                margin-bottom: 14px;
+            }
+            .loginForm__input {
+                margin-bottom: 29px;
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                label {
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    color: #444444;
+                }
+                input {
+                    width: 338px;
+                    padding: 15px 13px 12px 13px;
+                    border: 1px solid #E9E9E9;
+                    border-radius: 5px;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18.62px;
+                }
+            }
+            .loginForm__action {
+                margin-top: -5px;
+                margin-bottom: 24px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 74px;
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    input {
+                        width: 18px;
+                        height: 18px;
+                    }
+                    label {
+                        font-family: Poppins;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 15px;
+                        color: #777777;
+                    }
+                }
+                button {
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    color: #777777;
+                }
+            }
+            .loginForm__submit {
+                display: flex;
+                align-items: center;
+                gap: 186px;
+                button:first-child {
+                    padding: 12px 21px;
+                    border-radius: 5px;
+                    background: #F53E32;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16.8px;
+                    color: white;
+                }
+                button:last-child {
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.47999998927116394px;
+                    color: #777777;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .loginForm-section {
+        form {
+            width: 100% !important;
+            .loginForm__input {
+                input {
+                    width: 100% !important;
+                }
+            }
+            .loginForm__action {
+                gap: 22px !important;
+            }
+            .loginForm__submit {
+                gap: 136px !important; 
+            }
+        }
+    }
+}
