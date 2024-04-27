@@ -36,5 +36,19 @@
                 }
             }
         }
+        .logout-btn {
+            width: 100%;
+            margin-top: 100px;
+            padding: 12px 20px;
+            background: #F53E32;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: 600;
+            color: white;
+            &:active {
+                transition: .2s;
+                scale: .99;
+            }
+        }
     }
 }

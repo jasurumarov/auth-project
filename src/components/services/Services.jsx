@@ -1,12 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 // IMAGES
 import BenefitsIcon1 from '../../images/benefitsicon1.svg'
-import BenefitsIcon2 from '../../images/benefitsicon2.svg'
 import BenefitsIcon3 from '../../images/benefitsicon3.svg'
 import BenefitsIcon4 from '../../images/benefitsicon4.svg'
 import BenefitsIcon5 from '../../images/benefitsicon5.svg'
 
 const Services = () => {
+
+    const navigate = useNavigate();
+
+    const handleLogOut = () => {
+        localStorage.removeItem("x-auth-token");
+        navigate("/")
+    } 
   return (
     <div className='services-section'>
         <div className="header-container">
@@ -32,6 +39,7 @@ const Services = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 </div>
             </div>
+            <button onClick={handleLogOut} className='logout-btn'>Log out</button>
         </div>
     </div>
   )
