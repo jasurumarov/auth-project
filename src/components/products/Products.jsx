@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from '../../api'
+import {Link} from 'react-router-dom'
 // IMAGES
 import Rate from "../../images/rate.svg"
 import Cart from "../../images/cart-card.svg"
@@ -37,7 +38,9 @@ const Products = () => {
     let cards = data?.slice(0, 10)?.map(el => (
         <div data-aos="flip-left" data-aos-anchor-placement="center-bottom" key={el.id} className="products-section__product">
             <div className="products-section__product__img">
-                <img src={el.thumbnail} alt="" />
+                <Link to={`/product/${el.id}`}>
+                    <img src={el.thumbnail} alt="" />
+                </Link>
             </div>
             <p className='products-section__product__type'>{el.category}</p>
             <p className='products-section__product__title'>{el.title}</p>
