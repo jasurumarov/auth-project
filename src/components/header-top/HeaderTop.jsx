@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import MenuBtn from '../../images/menu-btn.svg'
 import CallIcon from '../../images/call-icon.svg'
+import { Link } from 'react-router-dom'
 
 const HeaderTop = () => {
     const [toggle, setToggle] = useState(false)
@@ -13,7 +14,7 @@ const HeaderTop = () => {
                 </button>
                 <ul className={`navbar__list ${ toggle ? "show" : ""}`}>
                     <li>
-                        <a href="#">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <select name="" id="">

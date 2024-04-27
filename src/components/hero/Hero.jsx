@@ -30,17 +30,17 @@ const Hero = () => {
         <SwiperSlide>
           <img src={HeroBg} alt="swiper img" />
           <div className="hero__swiper-title">
-            <h3><span>100%</span>Organic Vegetables</h3>
-            <h1>The best way to stuff your wallet.</h1>
+            <h3><span>100%</span>Organic Fruits</h3>
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis beatae consequuntur.</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={HeroBg} alt="swiper img" />
           <div className="hero__swiper-title">
-            <h3><span>100%</span>Organic Vegetables</h3>
-            <h1>The best way to stuff your wallet.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis beatae consequuntur.</p>
+            <h3><span>100%</span>Organic Fields</h3>
+            <h1>Reiciendis beatae consequuntur.</h1>
+            <p>Lorem sit ipsum dolor  amet adipisicing consectetur  elit.  reiciendis beatae Amet consequuntur.</p>
           </div>
         </SwiperSlide>  
       </Swiper>
