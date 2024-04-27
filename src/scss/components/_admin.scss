@@ -1,5 +1,10 @@
 .adminHero-section {
     margin: 100px 0;
+    .header-container {
+        max-width: 1328px;
+        padding: 0 16px;
+        margin: 0 auto; 
+    }
     .adminHero-section__content {
         display: flex;
         flex-wrap: wrap;
@@ -25,15 +30,76 @@
                 color: #7A7A7A;
                 margin-bottom: 27px;
             }
-            p:first-child {
+            .adminHero__title-desc1 {
                 max-width: 622px;
             }
-            p:nth-child(2) {
+            .adminHero__title-desc2 {
                 max-width: 585px;
             } 
-            p:last-child {
+            .adminHero__title-desc3 {
                 max-width: 628px;
             }
+            .adminHero__title-results {
+                max-width: 636px;
+                padding: 20px 64px 30px 64px;
+                background: #F7F7F8;
+                border: 1px solid #E9E9E9;
+                border-radius: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 30px;
+                .adminHero__title-result {
+                    text-align: center;
+                    h3 {
+                        color: #F53E32;
+                        font-family: Poppins;
+                        font-size: 60px;
+                        font-weight: 600;
+                        line-height: 60px;
+                        position: relative;
+                        margin-bottom: 7px;
+                        span {
+                            font-family: Poppins;
+                            font-size: 30px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            color: #7A7A7A;
+                            position: absolute;
+                            top: 23px;
+                            
+                        }
+                    }
+                    h4 {
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 16px;
+                        letter-spacing: 0.47999998927116394px;
+                        color: #212529;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1307px) {
+    .adminHero-section__content {
+        img {
+            order: -1;
+            width: 100%;
+        }
+        p {
+            max-width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 469px) {
+    .adminHero-section__content {
+        .adminHero__title-results {
+            justify-content: center !important;
         }
     }
 }

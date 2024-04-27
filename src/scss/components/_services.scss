@@ -1,0 +1,40 @@
+.services-section {
+    margin-bottom: 100px;
+    .header-container {
+        max-width: 1328px;
+        padding: 0 16px;
+        margin: 0 auto; 
+        .services-section__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            .services__card {
+                width: 306px;
+                padding: 26px 40px;
+                background: #F7F7F8;
+                border: 1px solid #E9E9E9;
+                border-radius: 5px;
+                text-align: center;
+                h3 {
+                    margin-top: 8px;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30.01px;
+                    letter-spacing: 0.47999998927116394px;
+                    color: #2B2B2D;
+                    margin-bottom: 9px;
+                }
+                p {
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    letter-spacing: 0.47999998927116394px;
+                    color: #7A7A7A;
+                }
+            }
+        }
+    }
+}
